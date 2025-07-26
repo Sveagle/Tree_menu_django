@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тест меню</title>
+    <style>
+        .menu { list-style: none; padding: 0; }
+        .menu-item { margin: 5px 0; }
+        .menu-item a { text-decoration: none; color: blue; }
+        .submenu { padding-left: 20px; }
+        .active > a { font-weight: bold; color: red; }
+    </style>
+</head>
+<body>
+    <h1>Тест древовидного меню</h1>
+    
+    <!-- Ссылка в админку -->
+    <p><a href="/admin/" style="color: green;">Админка (добавь меню тут)</a></p>
+    
+    <!-- Вывод меню -->
+    {% load menu_tags %}
+    {% draw_menu 'main_menu' %}
+    
+    <p>Как использовать:</p>
+    <ol>
+        <li>Зайди в <a href="/admin/">админку</a></li>
+        <li>Создай меню с названием <strong>"main_menu"</strong></li>
+        <li>Добавь пункты меню</li>
+        <li>Обнови эту страницу</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,69 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media/
+
+# Virtual environment
+venv/
+ENV/
+.env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Database migrations (исключаем все, кроме __init__.py)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Статические файлы (если собираются collectstatic)
+/staticfiles/
+
+# Файлы окружения
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# PyCharm
+.idea/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Backup files
+*.bak
+*.tmp
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTest
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Package files
+*.egg-info/
+dist/
+build/
